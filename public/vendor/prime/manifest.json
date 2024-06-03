@@ -1,0 +1,24 @@
+{
+  "modules/prime/resources/css/app.css": {
+    "file": "assets/app-469db6af.css",
+    "isEntry": true,
+    "src": "modules/prime/resources/css/app.css"
+  },
+  "modules/prime/resources/images/dot-module.jpg": {
+    "file": "assets/dot-module-69ab3bb6.jpg",
+    "src": "modules/prime/resources/images/dot-module.jpg"
+  },
+  "modules/prime/resources/images/fleet-maintenance.jpg": {
+    "file": "assets/fleet-maintenance-ac89069f.jpg",
+    "src": "modules/prime/resources/images/fleet-maintenance.jpg"
+  },
+  "modules/prime/resources/images/fleet-maintenance.webp": {
+    "file": "assets/fleet-maintenance-95d8152b.webp",
+    "src": "modules/prime/resources/images/fleet-maintenance.webp"
+  },
+  "modules/prime/resources/js/app.js": {
+    "file": "assets/app-8853b5ee.js",
+    "isEntry": true,
+    "src": "modules/prime/resources/js/app.js"
+  }
+}
