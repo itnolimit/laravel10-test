@@ -38,8 +38,9 @@ class VehicleTable extends DataTableComponent
 
     public function builder(): Builder
     {
-        Vehicle::query()->select('vehicles.*')
-            ->Company(1)->with(['plates'])
-            ->withTrashed();
+        $vehicles = Vehicle::query()->select('vehicles.*')
+            ->Company(1);
+
+        return $vehicles->with(['plates'])->withTrashed();
     }
 }
