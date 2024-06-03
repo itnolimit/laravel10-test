@@ -4,10 +4,12 @@ namespace App\Livewire;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Auth;
+use Livewire\Attributes\Lazy;
 use Prime\Vehicle\Models\Vehicle;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
 
+#[Lazy]
 class VehicleTable extends DataTableComponent
 {
     public function configure(): void
