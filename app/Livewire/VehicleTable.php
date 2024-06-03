@@ -31,14 +31,15 @@ class VehicleTable extends DataTableComponent
             Column::make('Make', 'make')->sortable()->searchable(),
             Column::make('Model', 'model')->sortable()->searchable(),
             Column::make('Vin', 'vin')->sortable()->searchable(),
+            Column::make('Plate No.', 'plate_number')->format(fn ($value, $row, Column $column) => view('vehicle::components.vehicle.tables.includes.plate-number', compact('row')))->sortable()->searchable(),
             Column::make('State', 'state')->sortable()->searchable(),
         ];
     }
 
     public function builder(): Builder
     {
-        return Vehicle::query()->select('vehicles.*')
-            ->Company(1);
-
+        Vehicle::query()->select('vehicles.*')
+            ->Company(1)->with(['plates'])
+            ->withTrashed();
     }
 }
